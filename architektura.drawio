@@ -257,10 +257,13 @@
     </mxGraphModel>
   </diagram>
   <diagram id="NFrNTsnXe_20cU97ScKt" name="Space Oriented Architecture">
-    <mxGraphModel dx="774" dy="516" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="766" dy="511" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="ey1OSXtennUpFQbd5pv2-39" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="" vertex="1">
+          <mxGeometry height="176" width="630" x="90" y="70" as="geometry" />
+        </mxCell>
         <mxCell id="dd4V9PYRPyFsi-BTR3gK-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" value="PU-1" vertex="1">
           <mxGeometry height="110" width="190" x="250" y="120" as="geometry" />
         </mxCell>
@@ -342,10 +345,66 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="ey1OSXtennUpFQbd5pv2-33" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="" vertex="1">
-          <mxGeometry height="176" width="280" x="250" y="610" as="geometry" />
+          <mxGeometry height="220" width="280" x="250" y="610" as="geometry" />
         </mxCell>
         <mxCell id="ey1OSXtennUpFQbd5pv2-29" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=bottom;labelPosition=center;verticalLabelPosition=top;align=center;" value="API" vertex="1">
           <mxGeometry height="37" width="235" x="275" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="ey1OSXtennUpFQbd5pv2-35" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" value="Logika" vertex="1">
+          <mxGeometry height="37" width="260" x="260" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="ey1OSXtennUpFQbd5pv2-36" edge="1" parent="1" source="ey1OSXtennUpFQbd5pv2-35" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ey1OSXtennUpFQbd5pv2-35" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="470" y="650" as="sourcePoint" />
+            <mxPoint x="520" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ey1OSXtennUpFQbd5pv2-38" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Podział przesyłek na PU" vertex="1">
+          <mxGeometry height="30" width="130" x="260" y="653.5" as="geometry" />
+        </mxCell>
+        <mxCell id="ey1OSXtennUpFQbd5pv2-40" edge="1" parent="1" source="ey1OSXtennUpFQbd5pv2-38" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.214;entryY=0.997;entryDx=0;entryDy=0;entryPerimeter=0;edgeStyle=orthogonalEdgeStyle;" target="ey1OSXtennUpFQbd5pv2-29" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="380" y="630" as="sourcePoint" />
+            <mxPoint x="430" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ey1OSXtennUpFQbd5pv2-45" edge="1" parent="1" source="ey1OSXtennUpFQbd5pv2-29" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ey1OSXtennUpFQbd5pv2-29" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="380" y="630" as="sourcePoint" />
+            <mxPoint x="430" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ey1OSXtennUpFQbd5pv2-46" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="POST" vertex="1">
+          <mxGeometry height="30" width="60" x="435" y="593.5" as="geometry" />
+        </mxCell>
+        <mxCell id="ey1OSXtennUpFQbd5pv2-48" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.79;entryY=-0.011;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="466" y="623.5000000000001" as="sourcePoint" />
+            <mxPoint x="464.77690802348366" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ey1OSXtennUpFQbd5pv2-47" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="GET" vertex="1">
+          <mxGeometry height="30" width="60" x="295" y="593.5" as="geometry" />
+        </mxCell>
+        <mxCell id="ey1OSXtennUpFQbd5pv2-49" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Synchronizacja z DB" vertex="1">
+          <mxGeometry height="30" width="130" x="390" y="653.5" as="geometry" />
+        </mxCell>
+        <mxCell id="ey1OSXtennUpFQbd5pv2-50" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="DB" vertex="1">
+          <mxGeometry height="120" width="95" x="342.5" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="ey1OSXtennUpFQbd5pv2-51" edge="1" parent="1" source="ey1OSXtennUpFQbd5pv2-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" target="ey1OSXtennUpFQbd5pv2-38">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="325" y="760" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ey1OSXtennUpFQbd5pv2-52" edge="1" parent="1" source="ey1OSXtennUpFQbd5pv2-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.004;entryY=0.551;entryDx=0;entryDy=0;entryPerimeter=0;" target="ey1OSXtennUpFQbd5pv2-50">
+          <mxGeometry relative="1" x="-0.0315" as="geometry">
+            <Array as="points">
+              <mxPoint x="457.5" y="766.1" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
