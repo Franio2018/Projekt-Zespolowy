@@ -1,4 +1,4 @@
-<mxfile host="Electron" pages="4">
+<mxfile host="Electron" pages="5">
   <diagram id="YKaMGRpnBDn1u9r8zVGQ" name="Wymagania">
     <mxGraphModel dx="1783" dy="622" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -116,7 +116,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="Mikroserwisy + CQRS + modele paneli użytkowników" id="7S-_L54oUpGHnvCsAnOM">
-    <mxGraphModel dx="1191" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1046" dy="697" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -192,7 +192,7 @@
         <mxCell id="1UsoeZALjWAgff14qIfF-44" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="aktualizacja lokalizacji kuriera" vertex="1">
           <mxGeometry height="30" width="110" x="810" y="80" as="geometry" />
         </mxCell>
-        <mxCell id="1UsoeZALjWAgff14qIfF-45" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;verticalAlign=top;" value="Proponowana architektura do obsługi kurierów i klientów - mikro serwisy&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Mikro serwis jest odpowiedzialny za sektor w którym operuje kurier i klient&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Mikro serwis raz dziennie raportuje serwerowi głównemu rekordy i obecny stan operacji&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="1UsoeZALjWAgff14qIfF-45" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;verticalAlign=top;" value="Proponowana architektura do obsługi kurierów i klientów - mikro serwisy&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Mikro serwis jest odpowiedzialny za sektor w którym operuje kurier i klient&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Mikro serwis raportuje regularnie, minimum 1 na 5 min. serwerowi głównemu rekordy i obecny stan operacji&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="230" width="240" x="30" y="290" as="geometry" />
         </mxCell>
         <mxCell id="1UsoeZALjWAgff14qIfF-49" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Podgląd zamówień do zrealizowania&amp;nbsp;" vertex="1">
@@ -372,12 +372,12 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="NFrNTsnXe_20cU97ScKt" name="Space Oriented Architecture">
-    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+  <diagram id="NFrNTsnXe_20cU97ScKt" name="SBA (wariant hybrydowy)">
+    <mxGraphModel dx="980" dy="653" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="PxiFsgjMPb7hJRQIP81X-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;labelPerimeter=1;fontSize=27;fontStyle=1" value="MONOLIT" vertex="1">
+        <mxCell id="PxiFsgjMPb7hJRQIP81X-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;fontSize=27;fontStyle=1;labelPerimeter=1;" value="Monolit — System of Record" vertex="1">
           <mxGeometry height="509" width="688.5" x="182.5" y="370" as="geometry" />
         </mxCell>
         <mxCell id="PxiFsgjMPb7hJRQIP81X-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;labelPerimeter=1;" value="Central Server" vertex="1">
@@ -500,7 +500,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="PxiFsgjMPb7hJRQIP81X-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Sending Service" vertex="1">
-          <mxGeometry height="37" width="130" x="220" y="353" as="geometry" />
+          <mxGeometry height="37" width="130" x="140" y="353" as="geometry" />
         </mxCell>
         <mxCell id="PxiFsgjMPb7hJRQIP81X-4" edge="1" parent="1" source="ey1OSXtennUpFQbd5pv2-10" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="PxiFsgjMPb7hJRQIP81X-3" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
@@ -515,16 +515,123 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="PxiFsgjMPb7hJRQIP81X-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Reciver" vertex="1">
-          <mxGeometry height="60" width="60" x="390" y="341.5" as="geometry" />
+          <mxGeometry height="60" width="60" x="281" y="341.5" as="geometry" />
         </mxCell>
         <mxCell id="PxiFsgjMPb7hJRQIP81X-9" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;perimeter=cloudPerimeter;" value="Outside&lt;div&gt;Services&lt;/div&gt;" vertex="1">
           <mxGeometry height="80" width="120" x="760" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="yZQ3ExDVNY98BWQhl4SW-1" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;" value="&lt;div&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;Świadomy wybór: serwer centralny jest monolitem.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;PU komunikują się z nim asynchronicznie (data pump / write-behind),&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 18px; background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;więc nie blokuje hot pathu.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;Rozbicie tej warstwy na mikroserwisy dodałoby synchronicznych&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 18px; background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;wywołań i rozproszonej spójności tam, gdzie potrzebujemy tylko&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 18px; background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;jednego spójnego źródła zapisu → to dopiero stworzyłoby bottleneck.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;Styl: SBA z monolityczną warstwą trwałości&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;(hybryda SBA + monolit tylko w warstwie system-of-record).&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="390" width="440" x="960" y="190" as="geometry" />
+        </mxCell>
+        <UserObject id="yZQ3ExDVNY98BWQhl4SW-2" label="&lt;div&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Model odtwarzania (dwie warstwy):&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;• Padł węzeł PU → replika partycji / replay z logu brokera = zero utraty (NFR-06)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;• Padł cały region → odtworzenie z Central Server (backup), utrata do ostatniego synca&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;• Padł Central → odbudowa z sumy PU (dane gorące) + backup (historia)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;PU działa autonomicznie, gdy centrala jest niedostępna (sync = best-effort w tle).&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Reconciliation po event id + timestamp (idempotencja, jak w NFR-07).&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;🔗 Szczegóły: strona „Model awarii i odtwarzania” (kliknij)&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" link="data:page/id,RecoveryModelPage">
+          <mxCell parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;" vertex="1">
+            <mxGeometry height="260" width="440" x="960" y="600" as="geometry" />
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="RecoveryModelPage" name="Model awarii i odtwarzania">
+    <mxGraphModel dx="1842" dy="662" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="rm-title" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontSize=20;fontStyle=1;" value="Model awarii i odtwarzania" vertex="1">
+          <mxGeometry height="40" width="420" x="40" y="25" as="geometry" />
+        </mxCell>
+        <UserObject label="← wróć do strony „SBA (wariant hybrydowy)”" link="data:page/id,NFrNTsnXe_20cU97ScKt" id="rm-back">
+          <mxCell parent="1" style="text;html=1;whiteSpace=wrap;align=right;verticalAlign=middle;fontColor=#1061b0;fontStyle=4;" vertex="1">
+            <mxGeometry height="30" width="250" x="560" y="30" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="rm-pu1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;fontStyle=1;fillColor=none;strokeColor=#A50040;" value="PU-1 — region A" vertex="1">
+          <mxGeometry height="150" width="420" x="-120" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="rm-pu1-primary" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Partycja PRIMARY&lt;br&gt;(grid in-memory)" vertex="1">
+          <mxGeometry height="90" width="130" x="-100" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="rm-pu1-replica" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Partycja REPLIKA" vertex="1">
+          <mxGeometry height="90" width="130" x="160" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="rm-e-rep1" edge="1" parent="1" source="rm-pu1-primary" style="endArrow=classic;startArrow=classic;html=1;" target="rm-pu1-replica" value="replikacja&lt;br&gt;(zero utraty, NFR-06)">
+          <mxGeometry relative="1" x="-0.0769" y="25" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rm-pu2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;fontStyle=1;fillColor=none;strokeColor=#A50040;" value="PU-2 — region B" vertex="1">
+          <mxGeometry height="150" width="420" x="-120" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="rm-pu2-primary" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Partycja PRIMARY&lt;br&gt;(grid in-memory)" vertex="1">
+          <mxGeometry height="90" width="130" x="-100" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="X6lb8Hii_xnTSDTcv2ty-2" edge="1" parent="1" source="rm-pu2-replica" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="rm-pu2-primary" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rm-pu2-replica" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Partycja REPLIKA" vertex="1">
+          <mxGeometry height="90" width="130" x="160" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="rm-e-rep2" edge="1" parent="1" source="rm-pu2-primary" style="endArrow=classic;startArrow=classic;html=1;" target="rm-pu2-replica" value="replikacja&lt;br&gt;(zero utraty, NFR-06)">
+          <mxGeometry relative="1" x="-0.0909" y="25" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rm-e-handoff" edge="1" parent="1" source="rm-pu1" style="endArrow=classic;startArrow=classic;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="rm-pu2" value="handoff PU↔PU&lt;br&gt;(paczka między regionami)">
+          <mxGeometry relative="1" y="-70" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="-140" y="185" />
+              <mxPoint x="-140" y="375" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rm-broker" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;verticalAlign=middle;" value="Durable Event Log&lt;br&gt;(Message Broker)&lt;br&gt;&lt;br&gt;trwały log zdarzeń&lt;br&gt;→ replay przy odtwarzaniu" vertex="1">
+          <mxGeometry height="280" width="150" x="400" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="rm-e-log1" edge="1" parent="1" source="rm-pu1-primary" style="endArrow=classic;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="rm-broker" value="append events">
+          <mxGeometry relative="1" x="-0.6699" y="30" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="-35" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rm-e-log2" edge="1" parent="1" source="rm-pu2-primary" style="endArrow=classic;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="rm-broker" value="append events">
+          <mxGeometry relative="1" x="-0.9252" y="45" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="-35" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rm-central" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="Central Server&lt;br&gt;(monolit,&lt;br&gt;System of Record)" vertex="1">
+          <mxGeometry height="130" width="160" x="650" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="rm-e-pump" edge="1" parent="1" source="rm-broker" style="endArrow=classic;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;" target="rm-central" value="async data pump&lt;br&gt;(write-behind)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rm-backup" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#f5f5f5;strokeColor=#666666;" value="Backup / Archiwum&lt;br&gt;(NFR-09)" vertex="1">
+          <mxGeometry height="110" width="120" x="670" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="rm-e-backup" edge="1" parent="1" source="rm-central" style="endArrow=classic;startArrow=classic;html=1;" target="rm-backup" value="backup / restore">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rm-s1" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;verticalAlign=top;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;b&gt;Scenariusz 1 — padł węzeł PU&lt;/b&gt;&lt;br&gt;&lt;br&gt;Odtworzenie z REPLIKI lub replay z logu brokera.&lt;br&gt;&lt;br&gt;→ zero utraty potwierdzonych (NFR-06)" vertex="1">
+          <mxGeometry height="160" width="250" x="40" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="rm-s2" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;verticalAlign=top;fillColor=#ffe6cc;strokeColor=#d79b00;" value="&lt;b&gt;Scenariusz 2 — padł cały region&lt;/b&gt;&lt;br&gt;(PRIMARY + REPLIKA)&lt;br&gt;&lt;br&gt;Odtworzenie z Central Server (backup).&lt;br&gt;&lt;br&gt;→ utrata najwyżej do ostatniego synca" vertex="1">
+          <mxGeometry height="160" width="250" x="300" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="rm-s3" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;verticalAlign=top;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;b&gt;Scenariusz 3 — padł Central Server&lt;/b&gt;&lt;br&gt;&lt;br&gt;Stan gorący z sumy PU + historia z backupu.&lt;br&gt;&lt;br&gt;→ PU działają autonomicznie (sync = best-effort)" vertex="1">
+          <mxGeometry height="160" width="250" x="560" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="rm-recon" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontStyle=2;" value="Reconciliation zawsze po event id + timestamp (idempotencja) — ten sam mechanizm co przy kurierze bez zasięgu (NFR-07)." vertex="1">
+          <mxGeometry height="30" width="770" x="40" y="675" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="sPDbWjFhXaXsc_7HX93W" name="NadaniePaczki">
-    <mxGraphModel dx="650" dy="434" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
